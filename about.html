@@ -11,22 +11,35 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-light fixed-top navbar-expand-lg transparent">
-        <img src="img/logo-removebg.png" alt="logo">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar bg-light border-bottom navbar-light fixed-top navbar-expand-lg">
         <div class="container">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item ml-3 pt-1"><a href="">Once upon a time</a></li>
-            </ul>
+            <img src="img/logo-removebg.png" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
         </div>
+            <div class="collapse navbar-collapse" id="menu-items">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-3 pt-1">
+                        <a class="nav-link text-uppercase" href="#">Once upon a time</a>
+                    </li>
+                    <li class="nav-item ml-3 pt-1">
+                        <a class="nav-link text-uppercase" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item ml-3 pt-1">
+                        <a class="nav-link text-uppercase" href="#">Play now</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
     <header>
-        <h3 class="display-4 mb-4 text-secondary font-weight-normal">How our story begins</h3>
+        <div class="container">
+            <h1 class="display-4 mb-4 text-secondary">How our stories begin</h1>
+            <h4>Content from README.md</h4>
+        </div>
+
     </header>    
     <section class="card-deck text-center">
-        <div class="container">
             <div class="card mb-4 box-shadow">
                 <div class="card-header">
                     <h3 class="card-title"> Developer </h3>
@@ -54,7 +67,6 @@
                 </div>
                 <div class="card-footer"></div>
             </div>
-        </div>
 
     </section>
     <footer></footer>
