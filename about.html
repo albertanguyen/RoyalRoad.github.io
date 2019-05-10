@@ -1,153 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta class="keywords" content="HTML, CSS. Javascript">
     <!-- Import Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
             rel="stylesheet">
+    <!--Import social icons font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!--Import customized stylesheet-->        
     <link rel="stylesheet" href="css/style.css">
-    <!--Import social icons font-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <link rel="icon" href="img/logo-removebg.png" type="image/x-icon">
     <title>Royal Road</title>
 </head>
-<body>
-    <nav class="navbar bg-light border-bottom navbar-light fixed-top navbar-expand-lg">
-        <img src="img/logo-removebg.png" alt="ourlogo" height="40px" width="40px">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-            <div class="collapse navbar-collapse" id="menu-items">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ml-3 pt-1">
+<body class="aboutpage">
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent">
+        <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
+        <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
+            data-target="#menu-items">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!--Container adjusted for difference width size-->
+        <div class="collapse navbar-collapse menu" id="menu-items">
+            <!--Left menu-->
+            <div class="mr-auto">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item ml-3">
+                        <a class="nav-link text-uppercase" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link text-uppercase" href="about.html">|</a>
+                    </li>
+                    <li class="nav-item ml-3">
                         <a class="nav-link text-uppercase" href="#">Once upon a time</a>
-                    </li>
-                    <li class="nav-item ml-3 pt-1">
-                        <a class="nav-link text-uppercase" href="#">Log in</a>
-                    </li>
-                    <li class="nav-item ml-3 pt-1">
-                        <a class="nav-link text-uppercase" href="#">Play now</a>
                     </li>
                 </ul>
             </div>
+            <!-- Right menu -->
+            <div class="ml-auto dropdown">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item ml-3">
+                        <a class="nav-item nav-link text-uppercase" style="align-items: center;" href="login.html"
+                            target="_blank"><img src="img/login.png" width="25px" height="25px">&nbsp; Login</a>
+                    </li>
+                    <li class="nav-item dropdown ml-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/language.png" alt="lang" width="25px" height="25px">
+                        </a>
+                        <div class="dropdown-menu text-center bg-dark bg-transparent" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
+                            <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
+                            <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-item nav-link ml-3 order-2 order-md-3">
+            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Download</button>
+        </div>
     </nav>
     <header class="text-center mx-auto my-5 py-5">
         <div class="container">
-            <h1 class="display-4 mb-4 tex-white">How our stories begin</h1>
-            <h4 class="text-justify tex-white">Once upon a time, we started on the glorious road named Royal Road - 3 spirits with the sole mission to complete: Bring the whole world - the one we used to live - the lost world back to our current dimension. 
+            <h1 class="display-4 mb-4 text-white">How our stories begin</h1>
+            <h4 class="text-justify text-white">Once upon a time, we started on the glorious road named Royal Road - 3 spirits with the sole mission to complete: Bring the whole world - the one we used to live - the lost world back to our current dimension. 
                 Say no more! In order to complete that mission, you need a lot of time and let no one distract you from the mission. With which devices that you have at hand at anytime, you can take turn to play any role in the game session. Play as a team! You will never loose your chance to push your team toward the finished line.</h4>
-            <p class="text-justify tex-white"><span class="text-danger">[TL;DR] (please do not read)</span>This is the first new generation of multiplatform game, providing you real-time experience for only the souls who have the passion for strategic games.</p>
+            <p class="text-justify tex-white"><span class="text-danger">[TL;DR]</span>This is the first new generation of multiplatform game, providing you real-time experience for only the souls who have the passion for strategic games.</p>
             </div>
 
     </header>    
-    <section class="card-deck text-center">
-            <div class="card mb-4 box-shadow">
-                <div class="card-header bg-transparent">
-                    <h3 class="card-title"> The Something - your guidance</h3>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <img src="img/404.png" alt="harold-photo">
+    <section class="card-deck text-center px-5 mg-5">
+            <div class="card mb-4 box-shadow bg-transparent">
+                <h3 class="card-title py-3 bg-warning"> The Something - your guidance</h3>
+                <div class="card-body d-flex flex-column img-wrapper">
+                    <img class="img-fluid rounded-circle" src="img/Maggie.jpg" alt="harold-photo">
                 </div>
             </div>
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h3 class="card-title"> The real Thing - your fortune teller</h3>
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <img src="img/hoa-photo.jpg" alt="hoa-photo">
+            <div class="card mb-4 box-shadow bg-transparent">
+                <h3 class="card-title  py-3 bg-warning"> The real Thing - your fortune teller</h3>
+                <div class="card-body d-flex flex-column img-wrapper">
+                    <img class="img-fluid rounded-circle" src="img/banana.jpg" alt="hoa-photo">
                 </div>
             </div>
-            <div class="card mb-4 box-shadow">
-                <div class="card-header">
-                    <h3 class="card-title"> Chick - Your Jedi </h3>        
-                </div>
-                <div class="card-body d-flex flex-column">
-                    <img src="img/jay.jpg" alt="jay-photo">
+            <div class="card mb-4 box-shadow bg-transparent">
+                <h3 class="card-title py-3 bg-warning"> Chick - Your Jedi </h3>        
+                <div class="card-body d-flex flex-column img-wrapper">
+                    <img class="img-fluid rounded-circle" src="img/jay.jpg" alt="jay-photo">
                 </div>
             </div>
 
     </section>
 
-    <footer class="page-footer font-small pt-4 bg-gradient-danger" style="height:100%;">
+    <footer class="page-footer font-small pt-4 bg-warning text-white" style="height:100%;">
     
         <!-- Footer Links -->
         <div class="container-fluid text-center text-md-left">
-    
+            <ul>
+                <li class="list-inline-item"><a href="#" class="fa fa-twitter"></a></li>
+                <li class="list-inline-item"><a href="#" class="fa fa-youtube"></a></li>
+                <li class="list-inline-item"><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+            <hr/>
             <!-- Grid row -->
-            <div class="row">
+            <div class="row text-white">
     
                 <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-    
+                <div class="col-md-6 mt-md-0 mt-3 mx-5">
+
+                    <img class="my-3" src="img/logo.png" width="80px" height="80px" alt="logo">
                     <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns to organize your footer content.</p>
-    
-                </div>
-                <!-- Grid column -->
-    
-                <hr class="clearfix w-100 d-md-none pb-3">
-    
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-    
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-    
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
+                        <li class="list-inline-item"><a class=" text-white" href="">Terms and Conditions</a></li>
+                        <li class="list-inline-item"><a class=" text-white" href="">|</a></li>
+                        <li class="list-inline-item"><a class=" text-white" href="">Privacy</a></li>
+                        <li class="list-inline-item"><a class=" text-white" href="">|</a></li>
+                        <li class="list-inline-item"><a class=" text-white" href="">Game addition support</a></li>
                     </ul>
-    
                 </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-    
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-    
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-    
-                </div>
-                <!-- Grid column -->
-    
             </div>
             <!-- Grid row -->
     
         </div>
         <!-- Footer Links -->
-    
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="#">RoyalRoad</a>
+        <div class="footer-copyright text-center text-muted py-3 bg-warning">© 2018 Copyright:
+            <a class="text-white" href="#">RoyalRoad</a>
         </div>
         <!-- Copyright -->
     
@@ -162,5 +145,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="js/animation.js"></script>    
 </body>
 </html>
