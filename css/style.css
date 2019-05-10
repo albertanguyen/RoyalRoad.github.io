@@ -79,7 +79,6 @@ footer i {
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .aboutpage {
     background-color: grey;
 }
@@ -97,7 +96,6 @@ hr {
     padding: 0;
 }
 
-=======
 .btn {
     border: none;
 }
@@ -257,4 +255,3 @@ input[type=text], input[type=password] {
     }
   }
   /*End of Login Modal*/
->>>>>>> This closes #7, closes #3. Finish jumbotron. Update navbar. Update login modal
