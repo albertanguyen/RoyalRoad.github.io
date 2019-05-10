@@ -1,6 +1,6 @@
 nav a:hover {
-    color: black !important;
-    font-weight: bold;
+    text-decoration: none;
+    color: green !important;
 }
 
 .nav-item {
@@ -8,7 +8,7 @@ nav a:hover {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     height: 72px;
     font-weight: bold;
 }
@@ -18,7 +18,7 @@ nav {
 }
 
 .fa:hover {
-    color: black !important;
+    color: green !important;
 }
 
 @media (max-width: 768px) {
@@ -26,10 +26,17 @@ nav {
         background-color: rgba(0, 0, 0, 0.6);
         margin-top: 13px;
     }
+    .media-center {
+        justify-content: center;
+        text-align: center;
+    }
+    .media-logo-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
   }
 
 footer {
-    height: 538px;
     background-color: black;
     color: white;
 }
@@ -42,38 +49,30 @@ footer {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    display: inline-flex;
 }
 
 .social-text {
     align-items: center;
 }
 
-.container-right .fa {
-    margin: 40px 20px 0 0;
-    padding: 15px;
-    width: 60px;
-    height: 60px;
-    font-size: 30px;
+footer .fa {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
     text-align: center;
-}
-
-.fa-facebook {
-    background: #3B5998;
+    border-radius: 50%;
     color: white;
 }
 
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+.footer-bottom {
+    font-size: 12px;
 }
 
-.fa-reddit {
-    background: #ff5700;
-    color: white;
+footer a:hover {
+    text-decoration: none;
+    color: green !important;
 }
 
-.space-between {
-    justify-content: space-between;
+footer i {
+    cursor: pointer;
 }
-  
