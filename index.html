@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+            integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
         <title>Royal Road</title>
@@ -12,44 +16,54 @@
 
 <body>
     <!--navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent">
-        <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
-        <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse" data-target="#menu-items">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar-brand" href="">
+            <img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
+        <button class="navbar-toggler navbar-dark bg-dark ml-auto order-3 order-md-2" style="outline: none;"
+            type="button" data-toggle="collapse" data-target="#menu-items"><span class="navbar-toggler-icon"></span>
         </button>
 
         <!--Container adjusted for difference width size-->
-        <div class="collapse navbar-collapse menu" id="menu-items">
+        <div class="collapse navbar-collapse" id="menu-items">
+
             <!--Left menu-->
             <div class="mr-auto">
-                <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="about.html">About</a>
+                <ul class="navbar-nav text-uppercase text-white">
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="about.html">About</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="#">News</a>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">News</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="#">Guide</a>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">Guide</a>
                     </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="#">Lore</a>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">Lore</a>
                     </li>
                 </ul>
             </div>
+
             <!-- Right menu -->
-            <div class="ml-auto dropdown">
+            <div class="ml-auto">
                 <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item ml-3">
-                        <a class="nav-item nav-link text-uppercase" style="align-items: center;" href="login.html" target="_blank"><img src="img/login.png" width="25px" height="25px">&nbsp; Login</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/language.png" alt="lang" width="25px" height="25px">
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-item nav-link text-uppercase text-white" style="cursor: pointer;"
+                            href="login.html" target="_blank">
+                            <img src="img/login.png" alt="login" width="25px" height="25px">
+                            &nbsp; Login
                         </a>
-                        <div class="dropdown-menu text-center bg-dark bg-transparent" aria-labelledby="navbarDropdown">
+                    </li>
+                    <li class="nav-item dropdown ml-3 py-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
+                        </a>
+                        <div class="dropdown-menu text-center bg-dark mt-2" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
                         </div>
                     </li>
@@ -57,23 +71,189 @@
             </div>
         </div>
         <div class="nav-item nav-link ml-3 order-2 order-md-3">
-            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Download</button>
+            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Play Now</button>
         </div>
     </nav>
-    <!--navigation bar-->
+    <!--end of navigation bar-->
 
+    <!---header-->
     <header>
-
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/pc platform.png" class="d-block w-100" alt="pc" style="height: 100vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/mobile platform 1.jpg" class="d-block w-100" alt="mobile" style="height: 100vh;">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/download game 1.jpg" class="d-block w-100" alt="download" style="height: 100vh;">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </header>
+    <!---end of header-->
 
-    <section>
+    <!---section-->
+    <section class="py-5" style="background-color: black;">
+        <!--title-->
+        <div class="container">
+            <h1 class="display-4 mb-4 text-light font-weight-bold text-center">
+                News
+            </h1>
 
+            <div class="card-deck text-center">
+
+                <!--first card-->
+                <div class="card mb-4 box-shadow">
+                    <!--card header-->
+                    <div class="card-header bg-transparent">
+                        <img src="https://svgshare.com/i/6Rb.svg" alt="web-banner" width="120px">
+                    </div>
+                    <!--card body-->
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Web Design Bootcamp</h3>
+                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
+                        <ul class="list-unstyled my-4">
+                            <li>Build portfolio from scratch</li>
+                            <li>Responsive with Bootstrap</li>
+                            <li>Customize with Wordpress</li>
+                            <li>Mentoring support</li>
+                        </ul>
+                        <h3>4.9M VND
+                            <small class="text-muted">/ course</small>
+                        </h3>
+                    </div>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a class="btn btn-warning text-white" href="checkout.html">Check out</a>
+                    </div>
+                </div>
+
+                <!--second card-->
+                <div class="card mb-4 box-shadow">
+                    <!--card header-->
+                    <div class="card-header bg-transparent">
+                        <img src="http://i.imgur.com/gBBbwgH.png" alt="react-banner" width="120px">
+                    </div>
+                    <!--card body-->
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">React + React Native</h3>
+                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
+                        <ul class="list-unstyled my-4">
+                            <li>Build portfolio from scratch</li>
+                            <li>Responsive with Bootstrap</li>
+                            <li>Customize with Wordpress</li>
+                            <li>Mentoring support</li>
+                        </ul>
+                        <h3>4.9M VND
+                            <small class="text-muted">/ course</small>
+                        </h3>
+                    </div>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a class="btn btn-warning text-white" href="checkout.html">Check out</a>
+                    </div>
+                </div>
+
+                <!--third card-->
+                <div class="card mb-4 box-shadow">
+                    <!--card header-->
+                    <div class="card-header bg-transparent">
+                        <img src="http://i.imgur.com/lLtWDST.png" alt="data-banner" width="120px">
+                    </div>
+                    <!--card body-->
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Data Science</h3>
+                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
+                        <ul class="list-unstyled my-4">
+                            <li>Build portfolio from scratch</li>
+                            <li>Responsive with Bootstrap</li>
+                            <li>Customize with Wordpress</li>
+                            <li>Mentoring support</li>
+                        </ul>
+                        <h3>4.9M VND
+                            <small class="text-muted">/ course</small>
+                        </h3>
+                    </div>
+                    <!--card footer-->
+                    <div class="card-footer">
+                        <a class="btn btn-warning text-white"
+                            href="http://www.coderschool.vn/vn/tracks/machine-learning" target="_blank">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!---end of section-->
 
+    <!--footer-->
     <footer>
 
+        <!--upper footer-->
+        <div class="footer-top px-5 d-inline-flex">
+
+            <!--bootstrap container-->
+            <div class="container my-auto">
+                <div class="row">
+                    <!--left container-->
+                    <div class="col-12 col-md">
+                        <ul class="display-4 text-light font-weight-bold list-unstyled">
+                            <li class="text-warning">Royal Road</li>
+                            <li>Official</li>
+                            <li>Channel</li>
+                        </ul>
+                    </div>
+                    <!--right container-->
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--end of upper footer-->
+
+        <!--bottom footer-->
+        <div class="footer-bottom py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 d-flex order-3 order-md-2" style="justify-content: flex-end;">
+                        <a class="media-logo-center" href="#">
+                            <img src="img/logo.png" alt="logo" width="40px" height="40px">
+                        </a>
+                    </div>
+                    <div class="col-md-5 pt-2 py-2 mr-auto order-4 order-md-3">
+                        <ul class="list-unstyled d-flex media-center">
+                            <li class="pr-2"><a class="text-white" href="#">Terms and Conditions</a></li>|
+                            <li class="px-2"><a class="text-white" href="#">Privacy Policy</a></li>|
+                            <li class="px-2"><a class="text-white" href="#">Game Support</a></li>
+                        </ul>
+                        <div class="media-center">
+                            ©2019 Royal Road Corporation. All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-2 d-flex order-2 order-md-3" style="justify-content: center;">
+                        <a href="#" class="fa fa-facebook mx-2"></a>
+                        <a href="#" class="fa fa-twitter mx-2"></a>
+                        <a href="#" class="fa fa-reddit mx-2"></a>
+                        <a href="#" class="fa fa-youtube mx-2"></a>
+                        <i class="fa fa-discord" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </footer>
-    <!--Always put these right before closing tag of body element -->
+    <!--end of footer-->
+
+    <!--bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
