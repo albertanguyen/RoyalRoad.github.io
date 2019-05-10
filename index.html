@@ -16,22 +16,20 @@
     </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+
+    <!--navigation bar-->
     <nav class="navbar navbar-expand-md fixed-top">
         <a class="navbar-brand" href="">
             <img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
         <button class="navbar-toggler navbar-dark bg-dark ml-auto order-3 order-md-2" style="outline: none;"
             type="button" data-toggle="collapse" data-target="#menu-items"><span
-                class="navbar-toggler-icon"></span></button>
+                class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Container adjusted for difference width size-->
         <div class="collapse navbar-collapse" id="menu-items">
+
+            <!--Left menu-->
             <div class="mr-auto">
                 <ul class="navbar-nav text-uppercase text-white">
                     <li class="nav-item ml-3 py-2">
@@ -48,11 +46,15 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Right menu -->
             <div class="ml-auto">
                 <ul class="navbar-nav text-uppercase">
                     <li class="nav-item ml-3 py-2">
-                        <a class="nav-item nav-link text-uppercase text-white" style="cursor: pointer;">
-                            <img src="img/login.png" alt="login" width="25px" height="25px">&nbsp; Login</a>
+                        <a class="nav-item nav-link text-uppercase text-white" style="cursor: pointer;" href="login.html" target="_blank">
+                            <img src="img/login.png" alt="login" width="25px" height="25px">
+                            &nbsp; Login
+                        </a>
                     </li>
                     <li class="nav-item dropdown ml-3 py-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -74,6 +76,9 @@
             <button class="btn btn-dark text-uppercase text-white font-weight-bold">Play Now</button>
         </div>
     </nav>
+    <!--end of navigation bar-->
+
+    <!---header-->
     <header>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -97,16 +102,25 @@
             </a>
         </div>
     </header>
+    <!---end of header-->
+
+    <!---section-->
     <section class="py-5" style="background-color: black;">
+        <!--title-->
         <div class="container">
             <h1 class="display-4 mb-4 text-light font-weight-bold text-center">
                 News
             </h1>
+
             <div class="card-deck text-center">
+
+                <!--first card-->
                 <div class="card mb-4 box-shadow">
+                    <!--card header-->
                     <div class="card-header bg-transparent">
                         <img src="https://svgshare.com/i/6Rb.svg" alt="web-banner" width="120px">
                     </div>
+                    <!--card body-->
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Web Design Bootcamp</h3>
                         <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
@@ -120,14 +134,19 @@
                             <small class="text-muted">/ course</small>
                         </h3>
                     </div>
+                    <!--card footer-->
                     <div class="card-footer">
                         <a class="btn btn-lg btn-dark" href="checkout.html">Check out</a>
                     </div>
                 </div>
+                
+                <!--second card-->
                 <div class="card mb-4 box-shadow">
+                    <!--card header-->
                     <div class="card-header bg-transparent">
                         <img src="http://i.imgur.com/gBBbwgH.png" alt="react-banner" width="120px">
                     </div>
+                    <!--card body-->
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">React + React Native</h3>
                         <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
@@ -141,14 +160,19 @@
                             <small class="text-muted">/ course</small>
                         </h3>
                     </div>
+                    <!--card footer-->
                     <div class="card-footer">
                         <a class="btn btn-lg btn-dark" href="checkout.html">Check out</a>
                     </div>
                 </div>
+
+                <!--third card-->
                 <div class="card mb-4 box-shadow">
+                    <!--card header-->
                     <div class="card-header bg-transparent">
                         <img src="http://i.imgur.com/lLtWDST.png" alt="data-banner" width="120px">
                     </div>
+                    <!--card body-->
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Data Science</h3>
                         <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
@@ -162,6 +186,7 @@
                             <small class="text-muted">/ course</small>
                         </h3>
                     </div>
+                    <!--card footer-->
                     <div class="card-footer">
                         <a class="btn btn-lg btn-dark" href="http://www.coderschool.vn/vn/tracks/machine-learning"
                             target="_blank">Learn more</a>
@@ -170,20 +195,31 @@
             </div>
         </div>
     </section>
+    <!---end of section-->
+
+    <!--footer-->
     <footer>
-        <div class="footer-top px-4 d-inline-flex" style="justify-content: space-between; align-items: center;">
-            <div>
+        
+        <!--upper footer-->
+        <div class="footer-top px-4 d-inline-flex" style="justify-content: space-between; align-items: center;">    
+            
+            <!--left container-->
+            <div class="container-left">
                 <ul class="display-4 text-light font-weight-bold list-unstyled">
                     <li>Royal Road </li>
                     <li>Official Channel</li>
                 </ul>
             </div>
+
+            <!--right container-->
             <div class="container-right">
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-reddit"></a>
             </div>
         </div>
+
+        <!--bottom footer-->
         <div class="footer-bottom">
             <div>
                 <a href="#">
@@ -192,6 +228,18 @@
             </div>
         </div>
     </footer>
+    <!--end of footer-->
+
+    <!--bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
