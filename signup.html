@@ -1,81 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta class="keywords" content="HTML, CSS. Javascript">
         <!-- Import Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
             rel="stylesheet">
+        <!--Import social icons font-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Import font family-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+
         <!--Import customized stylesheet-->
         <link rel="stylesheet" href="css/style.css">
-        <!--Import social icons font-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <link rel="icon" href="img/logo-removebg.png" type="image/x-icon">
+
         <title>Sign up</title>
     </head>
 
-<body class="loginpage">
-
-    <!--navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent">
-        <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
-        <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
-            data-target="#menu-items">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!--Container adjusted for difference width size-->
-        <div class="collapse navbar-collapse menu" id="menu-items">
-            <!--Left menu-->
-            <div class="mr-auto">
-                <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="about.html">|</a>
-                    </li>
-                    <li class="nav-item ml-3">
-                        <a class="nav-link text-uppercase" href="#">Once upon a time</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Right menu -->
-            <div class="ml-auto dropdown">
-                <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item ml-3">
-                        <a class="nav-item nav-link text-uppercase" style="align-items: center;" href="login.html"
-                            target="_blank"><img src="img/login.png" width="25px" height="25px">&nbsp; Login</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/language.png" alt="lang" width="25px" height="25px">
-                        </a>
-                        <div class="dropdown-menu text-center bg-dark bg-transparent" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
-                            <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
-                            <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="nav-item nav-link ml-3 order-2 order-md-3">
-            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Download</button>
-        </div>
-    </nav>
-        <head></head>
-    <section></section>
-    <footer>
+    <body class="signup-page">
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent"
+            style="font-family: Oswald;">
+            <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
+            <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
+                data-target="#menu-items">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         
-    </footer>
+            <!--Container adjusted for difference width size-->
+            <div class="collapse navbar-collapse menu" id="menu-items">
+                <!--Left menu-->
+                <div class="mr-auto">
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item ml-3 py-2">
+                            <a class="nav-link text-uppercase text-white" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item ml-3 py-2">
+                            <a class="nav-link text-uppercase text-white" href="#">News</a>
+                        </li>
+                        <li class="nav-item ml-3 py-2">
+                            <a class="nav-link text-uppercase text-white" href="#">Guide</a>
+                        </li>
+                        <li class="nav-item ml-3 py-2">
+                            <a class="nav-link text-uppercase text-white" href="#">Lore</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Right menu -->
+                <div class="ml-auto">
+                    <ul class="navbar-nav text-uppercase">
+                        <!--login button-->
+                        <li class="nav-item ml-3 py-2">
+                            <a class="nav-item nav-link text-white"
+                                onclick="document.getElementById('id01').style.display='block'"
+                                style="width: auto; cursor: pointer">
+                                <img src="img/login.png" alt="login" width="25px" height="25px">
+                                &nbsp; Login</button>
+                            </a>
+                            <!--login modal-->
+                            <div id="id01" class="modal">
+                                <form class="modal-content animate" action="/action_page.php">
+                                    <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                            title="Close Modal">&times;</span>
+                                        <img src="img/login.png" alt="Avatar" height="60px" height="60px">
+                                    </div>
+                                
+                                    <div class="container-modal">
+                                        <label for="uname" class="text-white"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                    
+                                        <label for="psw" class="text-white"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                    
+                                        <button class="button-modal btn-warning" type="submit">Login</button>
+                                        <label class="text-white">
+                                            <input type="checkbox" checked="checked" name="remember">
+                                                Remember me
+                                            </label>
+                                    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/animation.js"></script>
+                                        <div class="container-modal" style="background-color:#f1f1f1">
+                                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                                class="cancelbtn button-modal">Cancel</button>
+                                            <div class="psw"><a href="#" style="color: red;">Forgot password?</a></div>
+                                        </div>
+                                    </form>
+                            </div>
+                            <!--end of login modal-->
+                        </li>
+                        <!--end of login button-->
+                    
+                        <li class="nav-item dropdown ml-3 py-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
+                            </a>
+                            <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3"
+                                aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
+                <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">Play Now</button>
+            </div>
+        </nav>
+
+        <!--Start Header-->
+        <header class="text-center mx-auto my-5 py-5" style="font-family: Oswald;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="jumbotron jumbotron-1">
+                            <div>
+                                <h1 class="text-weight-bold text-white text-uppercase">
+                                    Play now on your PC
+                                </h1>
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron jumbotron-2">
+                            <div>
+                                <h1 class="text-weight-bold text-white text-uppercase">
+                                    Play now on your mobile devices
+                                </h1>
+                                <div class="d-flex justify-content-center">
+                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Learn
+                                        more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="jumbotron jumbotron-3">
+                            <div>
+                                <h1 class="text-weight-bold text-white text-uppercase">
+                                    Download the game now and recieve 3000 surprises
+                                </h1>
+                                <div class="d-flex justify-content-center">
+                                    <ul class="d-inline-flex list-unstyled">
+                                        <li class="px-1"><a class="btn btn-lg text-white"
+                                                style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;"
+                                                href="#" role="button">Download PC</a></li>
+                                        <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;" href="#"
+                                                role="button">Download Mobile</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </header>
+        <!--End Header-->
+        <section></section>
+
+        <!--footer-->
+        <footer>
+            <!--upper footer-->
+            <div class="footer-top px-5 d-inline-flex">
+            
+                <!--bootstrap container-->
+                <div class="container my-auto">
+                    <div class="row">
+                        <!--left container-->
+                        <div class="col-12 col-md">
+                            <ul class="display-4 text-light font-weight-bold list-unstyled">
+                                <li style="color: #F2A900;">Royal Road</li>
+                                <li>Official</li>
+                                <li>Channel</li>
+                            </ul>
+                        </div>
+                        <!--right container-->
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--end of upper footer-->
+        
+            <!--bottom footer-->
+            <div class="footer-bottom py-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1 d-flex order-3 order-md-2" style="justify-content: flex-end;">
+                            <a class="media-logo-center" href="#">
+                                <img src="img/logo.png" alt="logo" width="40px" height="40px">
+                            </a>
+                        </div>
+                        <div class="col-md-5 pt-2 py-2 mr-auto order-4 order-md-3">
+                            <ul class="list-unstyled d-flex media-center">
+                                <li class="pr-2"><a class="text-white" href="#">Terms and Conditions</a></li>|
+                                <li class="px-2"><a class="text-white" href="#">Privacy Policy</a></li>|
+                                <li class="px-2"><a class="text-white" href="#">Game Support</a></li>
+                            </ul>
+                            <div class="media-center">
+                                ©2019 Royal Road Corporation. All Rights Reserved.
+                            </div>
+                        </div>
+                        <div class="col-md-6 py-2 d-flex order-2 order-md-3" style="justify-content: center;">
+                            <a href="#" class="fa fa-facebook mx-2"></a>
+                            <a href="#" class="fa fa-twitter mx-2"></a>
+                            <a href="#" class="fa fa-reddit mx-2"></a>
+                            <a href="#" class="fa fa-youtube mx-2"></a>
+                            <i class="fa fa-discord" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+        </footer>
+        <!--end of footer-->
+    
+    <!--bootstrap script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    
+    <!--modal script-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>   
+
 </body>
 </html>

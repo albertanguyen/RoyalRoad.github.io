@@ -1,5 +1,6 @@
 nav a:hover {
     text-decoration: none;
+<<<<<<< HEAD
 }
 
 a:hover {
@@ -8,6 +9,87 @@ a:hover {
 
 .nav-item {
     text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 72px;
+    font-weight: bold;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+.fa:hover {
+    color: green !important;
+}
+
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 13px;
+    }
+    .media-center {
+        justify-content: center;
+        text-align: center;
+    }
+    .media-logo-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-top {
+    background-image: url(../img/bg.jpg);
+    height: 400px;
+    width: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.social-text {
+    align-items: center;
+}
+
+footer .fa {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+=======
+    color: green !important;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item {
+>>>>>>> a880f9ede33827ca23a2b9e595f204a4799b8372
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.footer-bottom {
+    font-size: 12px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: green !important;
+}
+
+footer i {
+    cursor: pointer;
 }
 
 nav {
@@ -81,11 +163,11 @@ footer i {
 }
 
 .aboutpage {
-    background-color: grey;
+    background-color: black;
 }
 
-.loginpage {
-    background-color: grey;
+.signup-page {
+    background-color: black;
 }
 
 hr {
@@ -102,7 +184,11 @@ hr {
 }
 
 .btn:hover {
+<<<<<<< HEAD
     background-color: green;
+=======
+    background-color: darkgreen;
+>>>>>>> a880f9ede33827ca23a2b9e595f204a4799b8372
 }
 
 .jumbotron {
@@ -110,6 +196,7 @@ hr {
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+<<<<<<< HEAD
 }
 
 .jumbotron h1 {
@@ -256,3 +343,163 @@ input[type=text], input[type=password] {
     }
   }
   /*End of Login Modal*/
+=======
+}
+
+.jumbotron h1 {
+   background-color: rgba(0, 0, 0, 0.8);
+   padding: 2rem;
+}
+
+.jumbotron-1 {
+    background-image: url(../img/background-image-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.jumbotron-2 {
+    background-image: url(../img/mobile_platform_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.jumbotron-3 {
+    background-image: url(../img/download_game.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*Login Modal*/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .button-modal {
+    color: white;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button-modal:hover {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container-modal {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: black;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: green;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  /*End of Login Modal*/
+
+.card button:hover {
+  background: darkgreen;
+}
+
+button {
+  background: #F2A900;
+}
+
+.hover-gray:hover {
+  background: gray !important;
+}
+>>>>>>> a880f9ede33827ca23a2b9e595f204a4799b8372
