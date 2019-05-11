@@ -14,5 +14,5 @@ Royal Road is the first new generation of multiplatform game in which players ca
     
 # Authors
 - Harold Nguyen (product owner)
-- Anh Nguyen (dev specialist)
-- Huynh Te Hoa (scrum master)
+- Anh Nguyen (scrum master)
+- Huynh Te Hoa (dev specialist)

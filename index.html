@@ -29,8 +29,8 @@
             <!--Left menu-->
             <div class="mr-auto">
                 <ul class="navbar-nav text-uppercase text-white">
-                    <li class="nav-item ml-3 py-2">
-                        <a class="nav-link text-uppercase text-white" href="about.html">About</a>
+                    <li class="nav-item ml-3 py-2"
+                        <a class="nav-link text-uppercase text-white" href="about.html" target="_blank">About</a>
                     </li>
                     <li class="nav-item ml-3 py-2">
                         <a class="nav-link text-uppercase text-white" href="#">News</a>
@@ -47,19 +47,57 @@
             <!-- Right menu -->
             <div class="ml-auto">
                 <ul class="navbar-nav text-uppercase">
+                    <!--login button-->
                     <li class="nav-item ml-3 py-2">
-                        <a class="nav-item nav-link text-uppercase text-white" style="cursor: pointer;"
-                            href="login.html" target="_blank">
+                        <a class="nav-item nav-link text-white"
+                            onclick="document.getElementById('id01').style.display='block'"
+                            style="width: auto; cursor: pointer">
                             <img src="img/login.png" alt="login" width="25px" height="25px">
-                            &nbsp; Login
+                            &nbsp; Login</button>
                         </a>
+                        <!--login modal-->
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img/login.png" alt="Avatar" height="60px" height="60px">
+                                </div>
+
+                                <div class="container-modal">
+                                    <label for="uname" class="text-white"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw" class="text-white"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button class="button-modal btn-warning" type="submit">Login</button>
+                                    <label class="text-white">
+                                        <input type="checkbox" checked="checked" name="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container-modal" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn button-modal">Cancel</button>
+                                    <div class="psw"><a href="#" style="color: red;">Forgot password?</a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of login modal-->
+                    </li>
+                    <!--end of login button-->
+
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="signup.html" target="_blank">Sign up</a>
                     </li>
                     <li class="nav-item dropdown ml-3 py-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
                         </a>
-                        <div class="dropdown-menu text-center bg-dark mt-2" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
@@ -70,7 +108,7 @@
                 </ul>
             </div>
         </div>
-        <div class="nav-item nav-link ml-3 order-2 order-md-3">
+        <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
             <button class="btn btn-warning text-uppercase text-white font-weight-bold">Play Now</button>
         </div>
     </nav>
@@ -79,15 +117,47 @@
     <!---header-->
     <header>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/img/pc platform.png" class="d-block w-100" alt="pc" style="height: 100vh;">
+                    <div class="jumbotron jumbotron-1">
+                        <div>
+                            <h1 class="text-weight-bold text-white text-uppercase">
+                                Play now on your PC
+                            </h1>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/mobile platform 1.jpg" class="d-block w-100" alt="mobile" style="height: 100vh;">
+                    <div class="jumbotron jumbotron-2">
+                        <div>
+                            <h1 class="text-weight-bold text-white text-uppercase">
+                                Play now on your mobile devices
+                            </h1>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/img/download game 1.jpg" class="d-block w-100" alt="download" style="height: 100vh;">
+                    <div class="jumbotron jumbotron-3">
+                        <div>
+                            <h1 class="text-weight-bold text-white text-uppercase">
+                                Download the game now and recieve 3000 surprises
+                            </h1>
+                            <div class="d-flex justify-content-center">
+                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Download</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -106,9 +176,9 @@
     <section class="py-5" style="background-color: black;">
         <!--title-->
         <div class="container">
-            <h1 class="display-4 mb-4 text-light font-weight-bold text-center">
-                News
-            </h1>
+            <label class="display-4 mb-4 text-warning font-weight-bold d-flex justify-content-center">
+                News & Updates
+            </label>
 
             <div class="card-deck text-center">
 
@@ -134,10 +204,9 @@
                     </div>
                     <!--card footer-->
                     <div class="card-footer">
-                        <a class="btn btn-warning text-white" href="checkout.html">Check out</a>
+                        <a class="btn btn-warning text-white" href="#">Check out</a>
                     </div>
                 </div>
-
                 <!--second card-->
                 <div class="card mb-4 box-shadow">
                     <!--card header-->
@@ -160,7 +229,7 @@
                     </div>
                     <!--card footer-->
                     <div class="card-footer">
-                        <a class="btn btn-warning text-white" href="checkout.html">Check out</a>
+                        <a class="btn btn-warning text-white" href="checkout.html" target="_blank">Check out</a>
                     </div>
                 </div>
 
@@ -191,6 +260,13 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-danger btn-lg text-white" href="http://www.coderschool.vn/vn/tracks/machine-learning"
+                    target="_blank">View More
+                </a>
+            </div>
+        </div>
+
         </div>
     </section>
     <!---end of section-->
@@ -263,6 +339,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <!--modal script-->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
