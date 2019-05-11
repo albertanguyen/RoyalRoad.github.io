@@ -1,6 +1,5 @@
 nav a:hover {
     text-decoration: none;
-<<<<<<< HEAD
 }
 
 a:hover {
@@ -63,17 +62,6 @@ footer .fa {
     width: 40px;
     height: 40px;
     font-size: 20px;
-=======
-    color: green !important;
-}
-
-.card a {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-item {
->>>>>>> a880f9ede33827ca23a2b9e595f204a4799b8372
     text-align: center;
     border-radius: 50%;
     color: white;
