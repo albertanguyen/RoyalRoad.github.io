@@ -118,70 +118,137 @@
         </nav>
 
         <!--Start Header-->
-        <header class="text-center mx-auto my-5 py-5" style="font-family: Oswald;">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="jumbotron jumbotron-1">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Play now on your PC
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="jumbotron jumbotron-2">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Play now on your mobile devices
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Learn
-                                        more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="jumbotron jumbotron-3">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Download the game now and recieve 3000 surprises
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <ul class="d-inline-flex list-unstyled">
-                                        <li class="px-1"><a class="btn btn-lg text-white"
-                                                style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;"
-                                                href="#" role="button">Download PC</a></li>
-                                        <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;" href="#"
-                                                role="button">Download Mobile</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+        <header class="text-center mx-auto mt-5 py-5">
+            <div class="container d-inline">
+                <img class="d-inline-block" src="img/logo.png" alt="logo" width="100">
+                <h1 class="display-4 mb-4 text-danger font-weight-normal d-inline-block">Let's signup</h1>
             </div>
         </header>
         <!--End Header-->
-        <section></section>
+
+        <!--Start Section-->
+        <section class="card-deck my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="card mb-4 box-shadow col-md-12">
+                        <div class="card-body d-flex flex-column">
+                            <div class="col-8 col-md">
+                                <h3>Signup</h3>
+                                <form>
+                                    <div class="container pl-0">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="firstnameInput1">First name</label>
+                                                <input type="text" class="form-control" id="firstnameInput1"
+                                                    aria-placeholder="First name">
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="lastnameInput1">Last name</label>
+                                                <!--for will automatically move the cursor to the input field that has the same id-->
+                                                <input type="text" class="form-control" id="lastnameInput1"
+                                                    aria-placeholder="Last name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="emailInput1">Email</label>
+                                        <input type="text" class="form-control" id="emailInput1" placeholder="First name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="addressInput1">Address</label>
+                                        <input type="text" class="form-control" id="addressInput1" placeholder="1234 Main Str.">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="addressInput2">Address 2</label>
+                                        <input type="text" class="form-control" id="addressInput2"
+                                            placeholder="Apartment or suite">
+                                    </div>
+                                    <div class="row d-inline">
+                                        <div class="form-group col-md-4 d-inline-block">
+                                            <label for="countrySelect1">Country</label>
+                                            <select id="countrySelect1" class="form-control">
+                                                <option>Choose...</option>
+                                                <option>America</option>
+                                                <option>Viet Nam</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-4 d-inline-block">
+                                            <label for="StateSelect1">State</label>
+                                            <select id="StateSelect1" class="form-control">
+                                                <option>Choose...</option>
+                                                <option>New York</option>
+                                                <option>Ohio</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-4 d-inline-block">
+                                            <label for="ZipInput1">Zip</label>
+                                            <input type="text" class="form-control" id="ZipInput1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label" for="shippingAddrCheck1">
+                                            <input type="checkbox" class="form-check-input" id="shippingAddrCheck1">Shipping
+                                            address is the same as my billing address
+                                        </label>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label for="SavingCheck1" class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" id="SavingCheck1">Save this
+                                            information for next time
+                                        </label>
+                                    </div>
+                                    <h3>Payment</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="creditcardRadios"
+                                            id="creditcardRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="creditcardRadios1">Credit Card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="debitRadios" id="creditcardRadios2"
+                                            value="option2">
+                                        <label for="debitcardRadios2" class="form-check-label">Debit Card</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="radio" class="form-check-input" name="paypalRadios" id="paypalRadios3"
+                                            value="option3">
+                                        <label for="paypalRadios3" class="form-check-label">Paypal</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6">
+                                            <label for="namecardInput1">Name on card</label>
+                                            <input type="text" class="form-control" id="namecardInput1"></input>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="CreditnumInput1">Credit card number</label>
+                                            <input type="text" class="form-control" id="CreditnumInput1">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="form-group col-md-4">
+                                            <label for="expInput1">Expiration</label>
+                                            <input type="text" class="form-control" id="expInput1"></input>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="CVVInput1">CVV</label>
+                                            <input type="text" class="form-control" id="CVVInput1">
+                                        </div>
+                                    </div>
+                                
+                                </form>
+                            </div>
+                            <div class="card-footer my-md-5"><a class="btn btn-lg btn-danger btn-block"
+                                    href="ccheckout.html">Continute to check out</a></div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 box-shadow col-md-4">
+                        <h3>Your cart</h3>
+                    </div>
+                
+                </div>
+            </div>
+        
+        </section>
+        <!--End Section-->
 
         <!--footer-->
         <footer>
