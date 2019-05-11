@@ -1,4 +1,4 @@
-<img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo.png" width="48" align="right">
+<img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo-removebg.png"  align="left" width="48"/>
 
 # Royal Road
 
