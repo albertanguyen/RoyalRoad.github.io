@@ -43,18 +43,59 @@
                 </ul>
             </div>
             <!-- Right menu -->
-            <div class="ml-auto dropdown">
+            <div class="ml-auto">
                 <ul class="navbar-nav text-uppercase">
-                    <li class="nav-item ml-3">
-                        <a class="nav-item nav-link text-uppercase" style="align-items: center;" href="login.html"
-                            target="_blank"><img src="img/login.png" width="25px" height="25px">&nbsp; Login</a>
-                    </li>
-                    <li class="nav-item dropdown ml-3">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/language.png" alt="lang" width="25px" height="25px">
+                    <!--login button-->
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-item nav-link text-white" onclick="document.getElementById('id01').style.display='block'"
+                            style="width: auto; cursor: pointer">
+                            <img src="img/login.png" alt="login" width="25px" height="25px">
+                            &nbsp; Login</button>
                         </a>
-                        <div class="dropdown-menu text-center bg-dark bg-transparent" aria-labelledby="navbarDropdown">
+                        <!--login modal-->
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img/login.png" alt="Avatar" height="60px" height="60px">
+                                </div>
+            
+                                <div class="container-modal">
+                                    <label for="uname" class="text-white"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                                    <label for="psw" class="text-white"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                                    <button class="button-modal btn-warning" type="submit">Login</button>
+                                    <label class="text-white">
+                                        <input type="checkbox" checked="checked" name="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+            
+                                <div class="container-modal" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn button-modal">Cancel</button>
+                                    <div class="psw"><a href="#" style="color: red;">Forgot password?</a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of login modal-->
+                    </li>
+                    <!--end of login button-->
+            
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="signup.html" target="_blank">Sign up</a>
+                    </li>
+            
+                    <li class="nav-item dropdown ml-3 py-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
+                        </a>
+                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
                             <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
                             <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
@@ -62,12 +103,14 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="nav-item nav-link ml-3 order-2 order-md-3">
-            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Download</button>
-        </div>
-    </nav>
-    <header class="text-center mx-auto my-5 py-5">
+            </div>
+            <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
+                <button class="btn btn-warning text-uppercase text-white font-weight-bold">Play Now</button>
+            </div>
+            </nav>
+            <!--end of navigation bar-->
+
+        <header class="text-center mx-auto my-5 py-5">
         <div class="container">
             <h1 class="display-4 mb-4 text-white">How our stories begin</h1>
             <h4 class="text-justify text-white">Once upon a time, we started on the glorious road named Royal Road - 3 spirits with the sole mission to complete: Bring the whole world - the one we used to live - the lost world back to our current dimension. 
