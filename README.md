@@ -1,7 +1,6 @@
 <img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo-removebg.png"  align="left" width="48"/>
 
 <img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo.png" width="48" align="right">
->>>>>>> 69f98f6d1bd9394ea55d2c751b4a551b4df9ddb9
 
 # Royal Road
 
