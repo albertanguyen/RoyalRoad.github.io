@@ -25,7 +25,7 @@
         <!--navigation bar-->
         <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent"
             style="font-family: Oswald;">
-            <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
             <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
                 data-target="#menu-items">
                 <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
                                 onclick="document.getElementById('id01').style.display='block'"
                                 style="width: auto; cursor: pointer">
                                 <img src="img/login.png" alt="login" width="25px" height="25px">
-                                &nbsp; Login</button>
+                                &nbsp; Login
                             </a>
                             <!--login modal-->
                             <div id="id01" class="modal">
@@ -118,132 +118,156 @@
         </nav>
 
         <!--Start Header-->
-        <header class="text-center mx-auto mt-5 py-5">
-            <div class="container d-inline">
-                <img class="d-inline-block" src="img/logo.png" alt="logo" width="100">
-                <h1 class="display-4 mb-4 text-danger font-weight-normal d-inline-block">Let's signup</h1>
-            </div>
+        <header class="text-center mx-auto mt-5 py-5" style="color: #F2A900;">
         </header>
         <!--End Header-->
 
         <!--Start Section-->
-        <section class="card-deck my-5">
+        <section class="card-deck my-5"  style="font-family: Oswald;">
             <div class="container">
                 <div class="row">
                     <div class="card mb-4 box-shadow col-md-12">
                         <div class="card-body d-flex flex-column">
-                            <div class="col-8 col-md">
-                                <h3>Signup</h3>
+                            <div class="col-8 col-md mb-5">
+                                <h3 class="text-uppercase">Road Royal Account creation</h3></hr>
                                 <form>
-                                    <div class="container pl-0">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <label for="firstnameInput1">First name</label>
-                                                <input type="text" class="form-control" id="firstnameInput1"
-                                                    aria-placeholder="First name">
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="lastnameInput1">Last name</label>
-                                                <!--for will automatically move the cursor to the input field that has the same id-->
-                                                <input type="text" class="form-control" id="lastnameInput1"
-                                                    aria-placeholder="Last name">
-                                            </div>
-                                        </div>
+                                    <div class="form-group mt-5">
+                                        <label class="text-uppercase" for="emailInput1">Email Address</label>
+                                        <input type="text" class="form-control" id="emailInput1" placeholder="@ |    Email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="emailInput1">Email</label>
-                                        <input type="text" class="form-control" id="emailInput1" placeholder="First name">
+                                        <label class="text-uppercase" for="emailInput1">Confirm Email Address</label>
+                                        <input type="text" class="form-control" id="emailInput1" placeholder="@ |    Email">
                                     </div>
                                     <div class="form-group">
-                                        <label for="addressInput1">Address</label>
-                                        <input type="text" class="form-control" id="addressInput1" placeholder="1234 Main Str.">
-                                    </div>
+                                        <label class="text-uppercase" for="emailInput1">Password</label>
+                                        <input type="text" class="form-control" id="emailInput1" placeholder="Password">
+                                    </div>                                    
                                     <div class="form-group">
-                                        <label for="addressInput2">Address 2</label>
-                                        <input type="text" class="form-control" id="addressInput2"
-                                            placeholder="Apartment or suite">
+                                        <label class="text-uppercase" for="emailInput1">Confirm Password</label>
+                                        <input type="text" class="form-control" id="emailInput1" placeholder="Password">
                                     </div>
-                                    <div class="row d-inline">
+                                    <h4 class="text-uppercase">Date of birth</h4>
+                                    <div class="row d-inline d-flex">
                                         <div class="form-group col-md-4 d-inline-block">
-                                            <label for="countrySelect1">Country</label>
-                                            <select id="countrySelect1" class="form-control">
-                                                <option>Choose...</option>
-                                                <option>America</option>
-                                                <option>Viet Nam</option>
+                                            <select id="DateofBirth1" class="form-control">
+                                                <option>Month</option>
+                                                <option>January</option>
+                                                <option>February</option>
+                                                <option>March</option>
+                                                <option>April</option>
+                                                <option>May</option>
+                                                <option>May</option>
+                                                <option>June</option>
+                                                <option>July</option>
+                                                <option>August</option>
+                                                <option>September</option>
+                                                <option>October</option>
+                                                <option>November</option>
+                                                <option>December</option>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-4 d-inline-block">
-                                            <label for="StateSelect1">State</label>
+                                            <select id="StateSelect1" class="form-control align-items-start">
+                                                <option>Day</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>13</option>
+                                                <option>14</option>
+                                                <option>15</option>
+                                                <option>16</option>
+                                                <option>17</option>
+                                                <option>18</option>
+                                                <option>19</option>
+                                                <option>20</option>
+                                                <option>21</option>
+                                                <option>22</option>
+                                                <option>23</option>
+                                                <option>24</option>
+                                                <option>25</option>
+                                                <option>26</option>
+                                                <option>27</option>
+                                                <option>28</option>
+                                                <option>29</option>
+                                                <option>30</option>
+                                                <option>31</option>
+                                           </select>
+                                        </div>
+                                        <div class="form-group col-md-4 d-inline-block align-items-start">
                                             <select id="StateSelect1" class="form-control">
-                                                <option>Choose...</option>
-                                                <option>New York</option>
-                                                <option>Ohio</option>
+                                                <option>Year</option>
+                                                <option>1981</option>
+                                                <option>1982</option>
+                                                <option>1983</option>
+                                                <option>1984</option>
+                                                <option>1985</option>
+                                                <option>1986</option>
+                                                <option>1987</option>
+                                                <option>1988</option>
+                                                <option>1989</option>
+                                                <option>1990</option>
+                                                <option>1991</option>
+                                                <option>1992</option>
+                                                <option>1993</option>
+                                                <option>1994</option>
+                                                <option>1995</option>
+                                                <option>1996</option>
+                                                <option>1997</option>
+                                                <option>1998</option>
+                                                <option>1999</option>
+                                                <option>2000</option>    
+                                                <option>2001</option>
+                                                <option>2002</option>
+                                                <option>2003</option>
+                                                <option>2004</option>
+                                                <option>2005</option>
+                                                <option>2006</option>
+                                                <option>2007</option>
+                                                <option>2008</option>
+                                                <option>2009</option>
+                                                <option>2011</option>
+                                                <option>2012</option>
+                                                <option>2013</option>
+                                                <option>2014</option>
+                                                <option>2015</option>
+                                                <option>2016</option>
+                                                <option>2017</option>
+                                                <option>2018</option>
+                                                <option>2019</option>
                                             </select>
                                         </div>
-                                        <div class="form-group col-md-4 d-inline-block">
-                                            <label for="ZipInput1">Zip</label>
-                                            <input type="text" class="form-control" id="ZipInput1">
-                                        </div>
                                     </div>
-                                    <div class="form-group form-check">
-                                        <label class="form-check-label" for="shippingAddrCheck1">
-                                            <input type="checkbox" class="form-check-input" id="shippingAddrCheck1">Shipping
-                                            address is the same as my billing address
-                                        </label>
-                                    </div>
-                                    <div class="form-group form-check">
-                                        <label for="SavingCheck1" class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" id="SavingCheck1">Save this
-                                            information for next time
-                                        </label>
-                                    </div>
-                                    <h3>Payment</h3>
                                     <div class="form-check">
                                         <input class="form-check-input" type="radio" name="creditcardRadios"
-                                            id="creditcardRadios1" value="option1" checked>
-                                        <label class="form-check-label" for="creditcardRadios1">Credit Card</label>
+                                            id="creditcardRadios1" value="option1">
+                                        <label class="form-check-label" for="creditcardRadios1"><small>I have read and accept the terms of ourPrivacy Policy & Privacy Notice</small></label>
                                     </div>
-                                    <div class="form-check">
+                                    <div class="form-check my-md-3">
                                         <input type="radio" class="form-check-input" name="debitRadios" id="creditcardRadios2"
-                                            value="option2">
-                                        <label for="debitcardRadios2" class="form-check-label">Debit Card</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input type="radio" class="form-check-input" name="paypalRadios" id="paypalRadios3"
-                                            value="option3">
-                                        <label for="paypalRadios3" class="form-check-label">Paypal</label>
-                                    </div>
-                                    <div class="row">
-                                        <div class="form-group col-md-6">
-                                            <label for="namecardInput1">Name on card</label>
-                                            <input type="text" class="form-control" id="namecardInput1"></input>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <label for="CreditnumInput1">Credit card number</label>
-                                            <input type="text" class="form-control" id="CreditnumInput1">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="form-group col-md-4">
-                                            <label for="expInput1">Expiration</label>
-                                            <input type="text" class="form-control" id="expInput1"></input>
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="CVVInput1">CVV</label>
-                                            <input type="text" class="form-control" id="CVVInput1">
-                                        </div>
-                                    </div>
-                                
+                                            value="option2" checked>
+                                        <label for="debitcardRadios2" class="form-check-label"><small>Royal Road can email me occasionally to let me know about news and limited time swag I can earn</small></label>
+                                    </div>                                
                                 </form>
                             </div>
-                            <div class="card-footer my-md-5"><a class="btn btn-lg btn-danger btn-block"
-                                    href="ccheckout.html">Continute to check out</a></div>
+                            <div class="card-footer py-0 px-0"><a class="btn btn-lg btn-block py-3" style="background:#F2A900"
+                                    href="ccheckout.html">Sign Up</a></div>
                         </div>
                     </div>
-                    <div class="card mb-4 box-shadow col-md-4">
-                        <h3>Your cart</h3>
+                    <div class="card mb-4 box-shadow col-md-4 px-5 pb-4">
+                        <h3 class="text-uppercase mt-4" style="font-family: Oswald;">Already have an account</h3>
+                        <small class="mb-4">Click below to login to your account.</small>
+                        <button class="btn text-uppercase font-weight-bold pt-2border-warning" style="color: #F2A900; max-width: 30%;">Login</button>
                     </div>
-                
                 </div>
             </div>
         
@@ -278,7 +302,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-1 d-flex order-3 order-md-2" style="justify-content: flex-end;">
-                            <a class="media-logo-center" href="#">
+                            <a class="media-logo-center" href="index.html">
                                 <img src="img/logo.png" alt="logo" width="40px" height="40px">
                             </a>
                         </div>
