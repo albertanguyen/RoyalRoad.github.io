@@ -1,245 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta class="keywords" content="HTML, CSS. Javascript">
-        <!-- Import Bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-            rel="stylesheet">
-        <!--Import social icons font-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!--Import font family-->
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
+    <title>Sign Up</title>
+</head>
 
-        <!--Import customized stylesheet-->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/logo-removebg.png" type="image/x-icon">
+<body>
+    <!--navigation bar-->
+    <nav class="navbar navbar-expand-md fixed-top" style="font-family: Oswald;">
+        <a class="navbar-brand" href="">
+            <img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
+        <button class="navbar-toggler navbar-dark bg-dark ml-auto order-3 order-md-2" style="outline: none;"
+            type="button" data-toggle="collapse" data-target="#menu-items"><span class="navbar-toggler-icon"></span>
+        </button>
 
-        <title>Sign up</title>
-    </head>
+        <!--Container adjusted for difference width size-->
+        <div class="collapse navbar-collapse" id="menu-items">
 
-    <body class="signup-page">
-        <!--navigation bar-->
-        <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent"
-            style="font-family: Oswald;">
-            <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
-            <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
-                data-target="#menu-items">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <!--Container adjusted for difference width size-->
-            <div class="collapse navbar-collapse menu" id="menu-items">
-                <!--Left menu-->
-                <div class="mr-auto">
-                    <ul class="navbar-nav text-uppercase">
-                        <li class="nav-item ml-3 py-2">
-                            <a class="nav-link text-uppercase text-white" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item ml-3 py-2">
-                            <a class="nav-link text-uppercase text-white" href="#">News</a>
-                        </li>
-                        <li class="nav-item ml-3 py-2">
-                            <a class="nav-link text-uppercase text-white" href="#">Guide</a>
-                        </li>
-                        <li class="nav-item ml-3 py-2">
-                            <a class="nav-link text-uppercase text-white" href="#">Lore</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Right menu -->
-                <div class="ml-auto">
-                    <ul class="navbar-nav text-uppercase">
-                        <!--login button-->
-                        <li class="nav-item ml-3 py-2">
-                            <a class="nav-item nav-link text-white"
-                                onclick="document.getElementById('id01').style.display='block'"
-                                style="width: auto; cursor: pointer">
-                                <img src="img/login.png" alt="login" width="25px" height="25px">
-                                &nbsp; Login</button>
-                            </a>
-                            <!--login modal-->
-                            <div id="id01" class="modal">
-                                <form class="modal-content animate" action="/action_page.php">
-                                    <div class="imgcontainer">
-                                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                                            title="Close Modal">&times;</span>
-                                        <img src="img/login.png" alt="Avatar" height="60px" height="60px">
-                                    </div>
-                                
-                                    <div class="container-modal">
-                                        <label for="uname" class="text-white"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
-                                    
-                                        <label for="psw" class="text-white"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
-                                    
-                                        <button class="button-modal btn-warning" type="submit">Login</button>
-                                        <label class="text-white">
-                                            <input type="checkbox" checked="checked" name="remember">
-                                                Remember me
-                                            </label>
-                                    </div>
-
-                                        <div class="container-modal" style="background-color:#f1f1f1">
-                                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                                class="cancelbtn button-modal">Cancel</button>
-                                            <div class="psw"><a href="#" style="color: red;">Forgot password?</a></div>
-                                        </div>
-                                    </form>
-                            </div>
-                            <!--end of login modal-->
-                        </li>
-                        <!--end of login button-->
-                    
-                        <li class="nav-item dropdown ml-3 py-2">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
-                            </a>
-                            <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3"
-                                aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <!--Left menu-->
+            <div class="mr-auto">
+                <ul class="navbar-nav text-uppercase text-white">
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="about.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">News</a>
+                    </li>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">Guide</a>
+                    </li>
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-link text-uppercase text-white" href="#">Lore</a>
+                    </li>
+                </ul>
             </div>
-            <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
-                <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">Play Now</button>
-            </div>
-        </nav>
 
-        <!--Start Header-->
-        <header class="text-center mx-auto my-5 py-5" style="font-family: Oswald;">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="jumbotron jumbotron-1">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Play now on your PC
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#">Learn more</a>
+            <!-- Right menu -->
+            <div class="ml-auto">
+                <ul class="navbar-nav text-uppercase">
+                    <!--login button-->
+                    <li class="nav-item ml-3 py-2">
+                        <a class="nav-item nav-link text-white"
+                            onclick="document.getElementById('id01').style.display='block'"
+                            style="width: auto; cursor: pointer">
+                            <img src="img/login.png" alt="login" width="25px" height="25px">
+                            &nbsp; Login</button>
+                        </a>
+                        <!--login modal-->
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="img/login.png" alt="Avatar" height="60px" height="60px">
+                                </div>
+
+                                <div class="container-modal">
+                                    <label for="uname" class="text-white"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                    <label for="psw" class="text-white"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                    <button class="button-modal btn-warning" type="submit">Login</button>
+                                    <label class="text-white">
+                                        <input type="checkbox" checked="checked" name="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <div class="container-modal" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn button-modal">Cancel</button>
+                                    <div class="psw"><a href="#" style="color: red;">Forgot password?</a></div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--end of login modal-->
+                    </li>
+                    <!--end of login button-->
+
+                    <li class="nav-item dropdown ml-3 py-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
+                        </a>
+                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-white text-weight-bold" href="#">繁體中文</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
+            <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">Play
+                Now</button>
+        </div>
+    </nav>
+    <!--end of navigation bar-->
+
+    <!---Start Header-->
+    <header style="background-color: black;">
+        <div class="container text-center py-4 mx-auto" style="margin-top: 72px;">
+            <h1 class="display-4 font-weight-bold text-white">
+                <span style="color:#F2A900;">Royal Road</span> Account Creation
+            </h1>
+        </div>
+    </header>
+    <!---End of Header-->
+    <!---Start Section-->
+    <section class="pb-4 text-white" style="background-color: black;">
+        <div class="container p-4" style="border: 3px solid white;">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <label class="font-weight-bold pb-2" style="font-size: 20px;">Account Details</label>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="validationCustom01">First Name</label>
+                                <input type="text" class="form-control" id="validationCustom01"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="validationCustom02">Last Name</label>
+                                <input type="password" class="form-control" id="validationCustom02"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="validationCustomUsername">Username</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control mt-0" id="validationCustomUsername"
+                                    placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="jumbotron jumbotron-2">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Play now on your mobile devices
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Learn
-                                        more</a>
-                                </div>
+                        <div class="form-group">
+                            <label for="passowrd2">Password</label>
+                            <input type="password" class="form-control" id="password1">
+                        </div>
+                        <div class="form-group">
+                            <label for="passowrd2">Confirm Password</label>
+                            <input type="password" class="form-control" id="password2">
+                        </div>
+                        <div class="form-group">
+                            <label for="email1">Email</label>
+                            <input type="email1" class="form-control" id="email1">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress1">Address</label>
+                            <input type="text" class="form-control" id="inputAddress1"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="countrySelect1">Country</label>
+                                <select id="countrySelect1" class="form-control">
+                                    <option>Choose...</option>
+                                    <option>America</option>
+                                    <option>Viet Nam</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="StateSelect1">State</label>
+                                <select id="StateSelect1" class="form-control">
+                                    <option>Choose...</option>
+                                    <option>New York</option>
+                                    <option>Ohio</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="ZipInput1">Zip</label>
+                                <input type="text" class="form-control mt-0" id="ZipInput1">
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="jumbotron jumbotron-3">
-                            <div>
-                                <h1 class="text-weight-bold text-white text-uppercase">
-                                    Download the game now and recieve 3000 surprises
-                                </h1>
-                                <div class="d-flex justify-content-center">
-                                    <ul class="d-inline-flex list-unstyled">
-                                        <li class="px-1"><a class="btn btn-lg text-white"
-                                                style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;"
-                                                href="#" role="button">Download PC</a></li>
-                                        <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;" href="#"
-                                                role="button">Download Mobile</a></li>
-                                    </ul>
-                                </div>
+                        <div class="form-group py-2" style="font-size: 14px; font-family: arial;">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">
+                                    I have read and accept the terms of our
+                                    <a href="#" style="color:#F2A900;">
+                                        Policy & Privacy Notice</a>.
+                                </label>
+                            </div>
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                <label class="custom-control-label" for="customCheck2">
+                                    Royal Road can email me occasionally to let me know about news and limited time swag
+                                    I can earn.
+                                </label>
                             </div>
                         </div>
+                        <div class="form-group pt-2">
+                            <button type="submit" class="btn btn-block text-uppercase text-white font-weight-bold"
+                                style="background: #F2A900;">
+                                Create My Account
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="your-cart">
+                        <span class="font-weight-bold">Already have an account?</span>
+                    </div>
+                    <div>
+                        <p style="font-size: small;">Nice to see you again. Click below to login to
+                            your account.</p>
+                    </div>
+                    <div>
+                        <button class="btn text-uppercase text-white font-weight-bold"
+                            style="background: #F2A900;">Login</button>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </header>
-        <!--End Header-->
-        <section></section>
+        </div>
+    </section>
+    <!--end of section-->
 
-        <!--footer-->
-        <footer>
-            <!--upper footer-->
-            <div class="footer-top px-5 d-inline-flex">
-            
-                <!--bootstrap container-->
-                <div class="container my-auto">
-                    <div class="row">
-                        <!--left container-->
-                        <div class="col-12 col-md">
-                            <ul class="display-4 text-light font-weight-bold list-unstyled">
-                                <li style="color: #F2A900;">Royal Road</li>
-                                <li>Official</li>
-                                <li>Channel</li>
-                            </ul>
-                        </div>
-                        <!--right container-->
+    <!--footer-->
+    <footer>
+
+        <!--upper footer-->
+        <div class="footer-top px-5 d-inline-flex">
+
+            <!--bootstrap container-->
+            <div class="container my-auto">
+                <div class="row">
+                    <!--left container-->
+                    <div class="col-12 col-md">
+                        <ul class="display-4 text-light font-weight-bold list-unstyled">
+                            <li style="color: #F2A900;">Royal Road</li>
+                            <li>Official</li>
+                            <li>Channel</li>
+                        </ul>
                     </div>
+                    <!--right container-->
                 </div>
             </div>
-            </div>
-            <!--end of upper footer-->
-        
-            <!--bottom footer-->
-            <div class="footer-bottom py-4">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-1 d-flex order-3 order-md-2" style="justify-content: flex-end;">
-                            <a class="media-logo-center" href="#">
-                                <img src="img/logo.png" alt="logo" width="40px" height="40px">
-                            </a>
-                        </div>
-                        <div class="col-md-5 pt-2 py-2 mr-auto order-4 order-md-3">
-                            <ul class="list-unstyled d-flex media-center">
-                                <li class="pr-2"><a class="text-white" href="#">Terms and Conditions</a></li>|
-                                <li class="px-2"><a class="text-white" href="#">Privacy Policy</a></li>|
-                                <li class="px-2"><a class="text-white" href="#">Game Support</a></li>
-                            </ul>
-                            <div class="media-center">
-                                ©2019 Royal Road Corporation. All Rights Reserved.
-                            </div>
-                        </div>
-                        <div class="col-md-6 py-2 d-flex order-2 order-md-3" style="justify-content: center;">
-                            <a href="#" class="fa fa-facebook mx-2"></a>
-                            <a href="#" class="fa fa-twitter mx-2"></a>
-                            <a href="#" class="fa fa-reddit mx-2"></a>
-                            <a href="#" class="fa fa-youtube mx-2"></a>
-                            <i class="fa fa-discord" aria-hidden="true"></i>
+        </div>
+        </div>
+        <!--end of upper footer-->
+
+        <!--bottom footer-->
+        <div class="footer-bottom py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 d-flex order-3 order-md-2" style="justify-content: flex-end;">
+                        <a class="media-logo-center" href="#">
+                            <img src="img/logo.png" alt="logo" width="40px" height="40px">
+                        </a>
+                    </div>
+                    <div class="col-md-5 pt-2 py-2 mr-auto order-4 order-md-3">
+                        <ul class="list-unstyled d-flex media-center">
+                            <li class="pr-2"><a class="text-white" href="#">Terms and Conditions</a></li>|
+                            <li class="px-2"><a class="text-white" href="#">Privacy Policy</a></li>|
+                            <li class="px-2"><a class="text-white" href="#">Game Support</a></li>
+                        </ul>
+                        <div class="media-center">
+                            ©2019 Royal Road Corporation. All Rights Reserved.
                         </div>
                     </div>
-                
+                    <div class="col-md-6 py-2 d-flex order-2 order-md-3" style="justify-content: center;">
+                        <a href="#" class="fa fa-facebook mx-2"></a>
+                        <a href="#" class="fa fa-twitter mx-2"></a>
+                        <a href="#" class="fa fa-reddit mx-2"></a>
+                        <a href="#" class="fa fa-youtube mx-2"></a>
+                        <i class="fa fa-discord" aria-hidden="true"></i>
+                    </div>
                 </div>
-            
+
             </div>
-        </footer>
-        <!--end of footer-->
-    
+
+        </div>
+    </footer>
+    <!--end of footer-->
+
     <!--bootstrap script-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -250,7 +305,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    
+
     <!--modal script-->
     <script>
         // Get the modal
@@ -262,7 +317,8 @@
                 modal.style.display = "none";
             }
         }
-    </script>   
+    </script>
 
 </body>
+
 </html>

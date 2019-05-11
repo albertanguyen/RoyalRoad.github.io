@@ -1,6 +1,6 @@
 nav a:hover {
     text-decoration: none;
-    color: green !important;
+    color: darkgreen !important;
 }
 
 .card a {
@@ -23,7 +23,7 @@ nav {
 }
 
 .fa:hover {
-    color: green !important;
+    color: darkgreen !important;
 }
 
 @media (max-width: 768px) {
@@ -80,14 +80,6 @@ footer a:hover {
 
 footer i {
     cursor: pointer;
-}
-
-.aboutpage {
-    background-color: black;
-}
-
-.signup-page {
-    background-color: black;
 }
 
 hr {
@@ -259,14 +251,19 @@ input[type=text], input[type=password] {
   }
   /*End of Login Modal*/
 
-.card button:hover {
-  background: darkgreen;
+.hover-gray:hover {
+  background-color: gray !important;
+}
+
+button:hover {
+  background: darkgreen !important;
 }
 
 button {
   background: #F2A900;
 }
 
-.hover-gray:hover {
-  background: gray !important;
+/*Sign up*/
+form button:hover {
+  background-color: darkgreen !important;
 }
