@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
-            integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
-        <title>Royal Road</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+        integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
+    <title>Royal Road</title>
+</head>
 
 <body>
     <!--navigation bar-->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md fixed-top" style="font-family: Oswald;">
         <a class="navbar-brand" href="">
             <img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
         <button class="navbar-toggler navbar-dark bg-dark ml-auto order-3 order-md-2" style="outline: none;"
@@ -97,7 +98,8 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
                         </a>
-                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
@@ -109,13 +111,13 @@
             </div>
         </div>
         <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
-            <button class="btn btn-warning text-uppercase text-white font-weight-bold">Play Now</button>
+            <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">Play Now</button>
         </div>
     </nav>
     <!--end of navigation bar-->
 
     <!---header-->
-    <header>
+    <header style="font-family: Oswald;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -130,7 +132,7 @@
                                 Play now on your PC
                             </h1>
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Learn more</a>
+                                <a class="btn btn-lg text-white" style="background: #F2A900;" href="#">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +144,7 @@
                                 Play now on your mobile devices
                             </h1>
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Learn more</a>
+                                <a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -154,7 +156,10 @@
                                 Download the game now and recieve 3000 surprises
                             </h1>
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-warning btn-lg text-white" href="#" role="button">Download</a>
+                                <ul class="d-inline-flex list-unstyled">
+                                <li class="px-1"><a class="btn btn-lg text-white" style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;" href="#" role="button">Download PC</a></li>
+                                <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Download Mobile</a></li>
+                            </ul>
                             </div>
                         </div>
                     </div>
@@ -173,96 +178,82 @@
     <!---end of header-->
 
     <!---section-->
-    <section class="py-5" style="background-color: black;">
+    <section class="py-5" style="background-color: black; font-family: Oswald">
         <!--title-->
         <div class="container">
-            <label class="display-4 mb-4 text-warning font-weight-bold d-flex justify-content-center">
+            <label class="d-flex justify-content-center display-4 mb-4 text-warning font-weight-bold">
                 News & Updates
             </label>
+            <!--card start-->
+            <div class="row">
+                <div class="card-deck text-center py-4 px-2">
 
-            <div class="card-deck text-center">
+                    <!--first card-->
+                    <div class="card mb-4 box-shadow" style="border: none;">
+                        <!--card header-->
+                        <div class="p-0 card-header bg-transparent">
+                            <img src="img/arena-champion-resized.jpg" alt="arena-champion" width="100%" height="100%">
+                        </div>
+                        <!--card body-->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Arena Champion</h3>
+                            <p class="card-textmb-auto">Become the champion and receive the prize pool of over $1
+                                million
+                            </p>
+                        </div>
+                        <!--card footer-->
+                        <button class="text-white"
+                            style="background-color: none; border: none;">
+                            <div class="card-footer bg-transparent" style="border: none;">
+                                View more
+                            </div>
+                        </button>
+                    </div>
+                    <!--second card-->
+                    <div class="card mb-4 box-shadow" style="border: none;">
+                        <!--card header-->
+                        <div class="p-0 card-header bg-transparent">
+                            <img src="/img/massive-battle.jpg" alt="massive-battle" width="100%" height="100%">
+                        </div>
+                        <!--card body-->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Massive Battle</h3>
+                            <p class="card-text mb-auto">Live battle with more than 100.000 players and 50.000 NPCs at
+                                once
+                            </p>
+                        </div>
+                        <!--card footer-->
+                        <button class="text-white" style="background-color: none; border: none;">
+                            <div class="card-footer bg-transparent" style="border: none;">
+                                View more
+                            </div>
+                        </button>
+                    </div>
 
-                <!--first card-->
-                <div class="card mb-4 box-shadow">
-                    <!--card header-->
-                    <div class="card-header bg-transparent">
-                        <img src="https://svgshare.com/i/6Rb.svg" alt="web-banner" width="120px">
-                    </div>
-                    <!--card body-->
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title">Web Design Bootcamp</h3>
-                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
-                        <ul class="list-unstyled my-4">
-                            <li>Build portfolio from scratch</li>
-                            <li>Responsive with Bootstrap</li>
-                            <li>Customize with Wordpress</li>
-                            <li>Mentoring support</li>
-                        </ul>
-                        <h3>4.9M VND
-                            <small class="text-muted">/ course</small>
-                        </h3>
-                    </div>
-                    <!--card footer-->
-                    <div class="card-footer">
-                        <a class="btn btn-warning text-white" href="#">Check out</a>
-                    </div>
-                </div>
-                <!--second card-->
-                <div class="card mb-4 box-shadow">
-                    <!--card header-->
-                    <div class="card-header bg-transparent">
-                        <img src="http://i.imgur.com/gBBbwgH.png" alt="react-banner" width="120px">
-                    </div>
-                    <!--card body-->
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title">React + React Native</h3>
-                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
-                        <ul class="list-unstyled my-4">
-                            <li>Build portfolio from scratch</li>
-                            <li>Responsive with Bootstrap</li>
-                            <li>Customize with Wordpress</li>
-                            <li>Mentoring support</li>
-                        </ul>
-                        <h3>4.9M VND
-                            <small class="text-muted">/ course</small>
-                        </h3>
-                    </div>
-                    <!--card footer-->
-                    <div class="card-footer">
-                        <a class="btn btn-warning text-white" href="checkout.html" target="_blank">Check out</a>
-                    </div>
-                </div>
-
-                <!--third card-->
-                <div class="card mb-4 box-shadow">
-                    <!--card header-->
-                    <div class="card-header bg-transparent">
-                        <img src="http://i.imgur.com/lLtWDST.png" alt="data-banner" width="120px">
-                    </div>
-                    <!--card body-->
-                    <div class="card-body d-flex flex-column">
-                        <h3 class="card-title">Data Science</h3>
-                        <p class="card-text font-weight-bold mb-auto">5 weeks, 7-9PM Tu/Th, starts April 17th</p>
-                        <ul class="list-unstyled my-4">
-                            <li>Build portfolio from scratch</li>
-                            <li>Responsive with Bootstrap</li>
-                            <li>Customize with Wordpress</li>
-                            <li>Mentoring support</li>
-                        </ul>
-                        <h3>4.9M VND
-                            <small class="text-muted">/ course</small>
-                        </h3>
-                    </div>
-                    <!--card footer-->
-                    <div class="card-footer">
-                        <a class="btn btn-warning text-white"
-                            href="http://www.coderschool.vn/vn/tracks/machine-learning" target="_blank">Learn more</a>
+                    <!--third card-->
+                    <div class="card mb-4 box-shadow" style="border: none;">
+                        <!--card header-->
+                        <div class="p-0 card-header bg-transparent">
+                            <img src="img/updating.png" alt="updating" width="100%" height="100%">
+                        </div>
+                        <!--card body-->
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Details on Patch 1.1</h3>
+                            <p class="card-text mb-auto">10 melee weapons, 2 ranged weapons, and tons of new skins added
+                            </p>
+                        </div>
+                        <!--card footer-->
+                        <button class="text-white" style="background-color: none; border: none;">
+                            <div class="card-footer bg-transparent" style="border: none;">
+                                View more
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <a class="btn btn-danger btn-lg text-white" href="http://www.coderschool.vn/vn/tracks/machine-learning"
-                    target="_blank">View More
+                <a class="btn btn-lg text-white hover-gray" style="background: #202020" href="#">
+                    More News & Updates
                 </a>
             </div>
         </div>
@@ -283,7 +274,7 @@
                     <!--left container-->
                     <div class="col-12 col-md">
                         <ul class="display-4 text-light font-weight-bold list-unstyled">
-                            <li class="text-warning">Royal Road</li>
+                            <li style="color: #F2A900;">Royal Road</li>
                             <li>Official</li>
                             <li>Channel</li>
                         </ul>

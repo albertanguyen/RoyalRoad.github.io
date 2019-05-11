@@ -1,9 +1,11 @@
 nav a:hover {
     text-decoration: none;
+    color: green !important;
 }
 
-a:hover {
-    color: green !important;
+.card a {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-item {
@@ -102,7 +104,7 @@ hr {
 }
 
 .btn:hover {
-    background-color: green;
+    background-color: darkgreen;
 }
 
 .jumbotron {
@@ -118,7 +120,7 @@ hr {
 }
 
 .jumbotron-1 {
-    background-image: url(../img/pc_platform.png);
+    background-image: url(../img/background-image-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -256,3 +258,15 @@ input[type=text], input[type=password] {
     }
   }
   /*End of Login Modal*/
+
+.card button:hover {
+  background: darkgreen;
+}
+
+button {
+  background: #F2A900;
+}
+
+.hover-gray:hover {
+  background: gray !important;
+}
