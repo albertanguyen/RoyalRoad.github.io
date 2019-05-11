@@ -1,4 +1,4 @@
-<img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo-removebg.png"  style="float:left;" width="48"><h1>Royal Road</h1>
+<img src="https://github.com/albertanguyen/RoyalRoad.github.io/blob/master/img/logo-removebg.png"  style="float:left; position:absolute;" width="48"><h1>Royal Road</h1>
 
 Royal Road is the first new generation of multiplatform game in which players can enjoy playing as a general in a strategy game on mobile platforms such as phone or tablet; or else playing by PC as one of the soldiers in the army that players from mobile platform controll. This game will also provide a real-life economic and time related senses in order to give players a dynamic gaming environment
 
