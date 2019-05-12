@@ -150,10 +150,6 @@ footer i {
     cursor: pointer;
 }
 
-.aboutpage {
-    background-color: black;
-}
-
 .signup-page {
     background-color: black;
     background-image: url(../img/arena-champion-resized.jpg)
@@ -328,8 +324,8 @@ input[type=text], input[type=password] {
   }
   /*End of Login Modal*/
 
-.card button:hover {
-  background: darkgreen;
+button:hover {
+  background: darkgreen !important;
 }
 
 button {
