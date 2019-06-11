@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta class="keywords" content="HTML, CSS. Javascript">
-    <!-- Import Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"
-            rel="stylesheet">
-    <!--Import social icons font-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Import font family-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
 
-    <!--Import customized stylesheet-->        
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/logo-removebg.png" type="image/x-icon">
-    <title>About</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta class="keywords" content="HTML, CSS. Javascript">
+        <!-- Import Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Import social icons font-->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+            integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+        <!--Import font family-->
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+        <!--Import customized stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/logo.png">
+        <title>About</title>
+    </head>
 
-<body class="aboutpage">
+<body>
     <!--navigation bar-->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top font-weight-bold bg-transparent" style="font-family: Oswald;">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="40px" height="40px" alt="logo"></a>
-        <button class="navbar-toggler ml-auto order-3 order-md-2" type="button" data-toggle="collapse"
-            data-target="#menu-items">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md fixed-top" style="font-family: Oswald;">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="logo" width="40px" height="40px"></a>
+        <button class="navbar-toggler navbar-dark bg-dark ml-auto order-3 order-md-2" style="outline: none;"
+            type="button" data-toggle="collapse" data-target="#menu-items"><span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <!--Container adjusted for difference width size-->
-        <div class="collapse navbar-collapse menu" id="menu-items">
+        <div class="collapse navbar-collapse" id="menu-items">
+
             <!--Left menu-->
             <div class="mr-auto">
-                <ul class="navbar-nav text-uppercase">
+                <ul class="navbar-nav text-uppercase text-white">
                     <li class="nav-item ml-3 py-2">
-                        <a class="nav-link text-uppercase text-white" href="about.html">About</a>
+                        <a class="nav-link text-uppercase text-white" href="#">About</a>
+                    </li>
+                    <li class="nav-item ml-3 py-2 mt-2">
+                        |
                     </li>
                     <li class="nav-item ml-3 py-2">
-                        <a class="nav-link text-uppercase text-white" href="about.html">|</a>
-                    </li>
-                    <li class="nav-item ml-3 py-2">
-                        <a class="nav-link text-uppercase text-white" href="#">Once upon a time</a>
+                        <a class="nav-link text-uppercase text-white" href="#">Once Upon A Time</a>
                     </li>
                     <li class="nav-item ml-3 py-2">
                         <a class="nav-link text-uppercase text-white" href="#">News</a>
@@ -54,12 +59,14 @@
                     </li>
                 </ul>
             </div>
+
             <!-- Right menu -->
             <div class="ml-auto">
                 <ul class="navbar-nav text-uppercase">
                     <!--login button-->
                     <li class="nav-item ml-3 py-2">
-                        <a class="nav-item nav-link text-white" onclick="document.getElementById('id01').style.display='block'"
+                        <a class="nav-item nav-link text-white"
+                            onclick="document.getElementById('id01').style.display='block'"
                             style="width: auto; cursor: pointer">
                             <img src="img/login.png" alt="login" width="25px" height="25px">
                             &nbsp; Login</button>
@@ -72,21 +79,21 @@
                                         title="Close Modal">&times;</span>
                                     <img src="img/login.png" alt="Avatar" height="60px" height="60px">
                                 </div>
-            
+
                                 <div class="container-modal">
                                     <label for="uname" class="text-white"><b>Username</b></label>
                                     <input type="text" placeholder="Enter Username" name="uname" required>
-            
+
                                     <label for="psw" class="text-white"><b>Password</b></label>
                                     <input type="password" placeholder="Enter Password" name="psw" required>
-            
+
                                     <button class="button-modal btn-warning" type="submit">Login</button>
                                     <label class="text-white">
                                         <input type="checkbox" checked="checked" name="remember">
                                         Remember me
                                     </label>
                                 </div>
-            
+
                                 <div class="container-modal" style="background-color:#f1f1f1">
                                     <button type="button" onclick="document.getElementById('id01').style.display='none'"
                                         class="cancelbtn button-modal">Cancel</button>
@@ -97,16 +104,17 @@
                         <!--end of login modal-->
                     </li>
                     <!--end of login button-->
-            
+
                     <li class="nav-item ml-3 py-2">
                         <a class="nav-link text-uppercase text-white" href="signup.html" target="_blank">Sign up</a>
                     </li>
                     <li class="nav-item dropdown ml-3 py-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe " style="font-size: 24px; color: white;"></i>
                         </a>
-                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu text-center bg-dark bg-transparent mt-2 mr-3"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item text-white text-weight-bold" href="#">English</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item text-white text-weight-bold" href="#">Vietnamese</a>
@@ -116,13 +124,17 @@
                     </li>
                 </ul>
             </div>
-            </div>
-            <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
-                <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">Play Now</button>
-            </div>
+        </div>
+        <div class="nav-item nav-link ml-3 mb-1 order-2 order-md-3">
+            <button class="btn text-uppercase text-white font-weight-bold" style="background: #F2A900;">
+                Play Now
+            </button>
+        </div>
     </nav>
+    <!--end of navigation bar-->
+    
     <!--Start Header-->
-    <header class="text-center mx-auto my-5 py-5" style="font-family: Oswald;">
+    <header class="text-center mx-auto" style="font-family: Oswald;">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -149,7 +161,8 @@
                                 Play now on your mobile devices
                             </h1>
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-lg text-white" style="background: #F2A900;" href="#" role="button">Learn more</a>
+                                <a class="btn btn-lg text-white" style="background: #F2A900;" href="#"
+                                    role="button">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -163,10 +176,10 @@
                             <div class="d-flex justify-content-center">
                                 <ul class="d-inline-flex list-unstyled">
                                     <li class="px-1"><a class="btn btn-lg text-white"
-                                            style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;" href="#"
-                                            role="button">Download PC</a></li>
-                                    <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;" href="#"
-                                            role="button">Download Mobile</a></li>
+                                            style="padding-left: 1.75rem; padding-right: 1.75rem; background: #F2A900;"
+                                            href="#" role="button">Download PC</a></li>
+                                    <li class="px-1"><a class="btn btn-lg text-white" style="background: #F2A900;"
+                                            href="#" role="button">Download Mobile</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -182,52 +195,59 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </header>    
+    </header>
     <!--End Header-->
 
     <!--Start section-->
-    <section class="card-deck text-center px-5 mg-5">
-            <div class="card-rows mb-4 bg-transparent col-12">
-                <div class="container" style="font-family: Oswald;">
-                    <h1 class="display-4 mb-4 text-white">How our stories begin</h1>
-                    <h4 class="text-justify text-white">Once upon a time, we started on the glorious road named Royal Road - 3 spirits
-                        with the sole mission to complete: Bring the whole world - the one we used to live - the lost world back to our
-                        current dimension.
-                        Say no more! In order to complete that mission, you need a lot of time and let no one distract you from the
-                        mission. With whichever devices that you have at hand at anytime, you can take turn to play any role in the game
-                        session. Play as a team! You will never loose your chance to push your team toward the finished line.</h4>
-                    <p class="text-justify text-white"><span class="text-danger">[TL;DR]</span> This is the first new generation of
-                        multiplatform game, providing you real-time experience.</p>
-                </div>
+    <section class="card-deck text-center p-5" style="background: black;">
+        <div class="card-rows mb-4 bg-transparent col-12">
+            <div class="container" style="font-family: Oswald;">
+                <h1 class="display-4 mb-4 text-white">How our stories begin</h1>
+                <h4 class="text-justify text-white">Once upon a time, we started on the glorious road named Royal Road -
+                    3 spirits
+                    with the sole mission to complete: Bring the whole world - the one we used to live - the lost world
+                    back to our
+                    current dimension.
+                    Say no more! In order to complete that mission, you need a lot of time and let no one distract you
+                    from the
+                    mission. With whichever devices that you have at hand at anytime, you can take turn to play any role
+                    in the game
+                    session. Play as a team! You will never loose your chance to push your team toward the finished
+                    line.</h4>
+                <p class="text-justify text-white"><span class="text-danger">[TL;DR]</span> This is the first new
+                    generation of
+                    multiplatform game, providing you real-time experience.</p>
             </div>
-            <div class="card mb-4 box-shadow bg-transparent">
-                <h3 class="card-title py-3 bg-warning"  style="font-family: Oswald;"> The Something - your guidance</h3>
-                <div class="card-body d-flex flex-column img-wrapper">
-                    <img class="img-fluid rounded-circle" src="img/Maggie.jpg" alt="harold-photo">
-                </div>
+        </div>
+        <div class="card mb-4 box-shadow bg-transparent">
+            <h3 class="card-title py-3 bg-warning" style="font-family: Oswald;"> The Something - your guidance</h3>
+            <div class="card-body d-flex flex-column img-wrapper">
+                <img class="img-fluid rounded-circle" src="img/Maggie.jpg" alt="harold-photo">
             </div>
-            <div class="card mb-4 box-shadow bg-transparent">
-                <h3 class="card-title  py-3 bg-warning" style="font-family: Oswald;"> The real Thing - your fortune teller</h3>
-                <div class="card-body d-flex flex-column img-wrapper">
-                    <img class="img-fluid rounded-circle" src="img/banana.jpg" alt="hoa-photo">
-                </div>
+        </div>
+        <div class="card mb-4 box-shadow bg-transparent">
+            <h3 class="card-title  py-3 bg-warning" style="font-family: Oswald;"> The real Thing - your fortune teller
+            </h3>
+            <div class="card-body d-flex flex-column img-wrapper">
+                <img class="img-fluid rounded-circle" src="img/banana.jpg" alt="hoa-photo">
             </div>
-            <div class="card mb-4 box-shadow bg-transparent">
-                <h3 class="card-title py-3 bg-warning" style="font-family: Oswald;"> Chick - Your Jedi </h3>        
-                <div class="card-body d-flex flex-column img-wrapper">
-                    <img class="img-fluid rounded-circle" src="img/jay.jpg" alt="jay-photo">
-                </div>
+        </div>
+        <div class="card mb-4 box-shadow bg-transparent">
+            <h3 class="card-title py-3 bg-warning" style="font-family: Oswald;"> Chick - Your Jedi </h3>
+            <div class="card-body d-flex flex-column img-wrapper">
+                <img class="img-fluid rounded-circle" src="img/jay.jpg" alt="jay-photo">
             </div>
+        </div>
 
     </section>
     <!--End section-->
 
     <!--Start footer-->
     <footer>
-    
+
         <!--Start upper footer-->
         <div class="footer-top px-5 d-inline-flex">
-    
+
             <!--bootstrap container-->
             <div class="container my-auto">
                 <div class="row">
@@ -245,7 +265,7 @@
         </div>
         </div>
         <!--End of upper footer-->
-    
+
         <!--Bottom footer-->
         <div class="footer-bottom py-4">
             <div class="container-fluid">
@@ -273,22 +293,23 @@
                         <i class="fa fa-discord" aria-hidden="true"></i>
                     </div>
                 </div>
-    
+
             </div>
-    
+
         </div>
     </footer>
     <!--End of footer-->
-  
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-        <script src="js/animation.js"></script>    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/animation.js"></script>
 </body>
+
 </html>
